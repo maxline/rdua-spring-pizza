@@ -1,11 +1,11 @@
 package ua.rd.pizzaservice02.services;
 
-import ua.rd.pizzaservice.domain.Customer;
-import ua.rd.pizzaservice.domain.Order;
-import ua.rd.pizzaservice.domain.Pizza;
-import ua.rd.pizzaservice.repository.InMemoryOrderRepo;
-import ua.rd.pizzaservice.repository.InMemoryPizzaRepo;
-import ua.rd.pizzaservice.repository.OrderRepo;
+import ua.rd.pizzaservice02.domain.Customer;
+import ua.rd.pizzaservice02.domain.Order;
+import ua.rd.pizzaservice02.domain.Pizza;
+import ua.rd.pizzaservice02.repository.InMemoryOrderRepo;
+import ua.rd.pizzaservice02.repository.InMemoryPizzaRepo;
+import ua.rd.pizzaservice02.repository.OrderRepo;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,7 @@
-package ua.rd.pizzaservice02.repository;
+package ua.rd.pizzaservice03.repository;
 
-import ua.rd.pizzaservice02.domain.Pizza;
-import ua.rd.pizzaservice02.domain.PizzaType;
+import ua.rd.pizzaservice03.domain.Pizza;
+import ua.rd.pizzaservice03.domain.PizzaType;
 
 import java.math.BigDecimal;
 import java.util.HashMap;

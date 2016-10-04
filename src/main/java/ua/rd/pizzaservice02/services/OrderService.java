@@ -1,7 +1,7 @@
 package ua.rd.pizzaservice02.services;
 
-import ua.rd.pizzaservice.domain.Customer;
-import ua.rd.pizzaservice.domain.Order;
+import ua.rd.pizzaservice02.domain.Customer;
+import ua.rd.pizzaservice02.domain.Order;
 
 public interface OrderService {
 

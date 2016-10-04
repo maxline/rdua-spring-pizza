@@ -1,8 +1,8 @@
-package ua.rd.pizzaservice02.services;
+package ua.rd.pizzaservice03.services;
 
-import ua.rd.pizzaservice02.domain.Pizza;
-import ua.rd.pizzaservice02.repository.PizzaRepo;
-import ua.rd.pizzaservice02.infrastructure.InitialContext;
+import ua.rd.pizzaservice03.domain.Pizza;
+import ua.rd.pizzaservice03.repository.PizzaRepo;
+import ua.rd.pizzaservice03.infrastructure.InitialContext;
 
 
 public class SimplePizzaService implements PizzaService {

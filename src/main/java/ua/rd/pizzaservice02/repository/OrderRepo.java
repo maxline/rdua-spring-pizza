@@ -1,6 +1,6 @@
 package ua.rd.pizzaservice02.repository;
 
-import ua.rd.pizzaservice.domain.Order;
+import ua.rd.pizzaservice02.domain.Order;
 
 /**
  *

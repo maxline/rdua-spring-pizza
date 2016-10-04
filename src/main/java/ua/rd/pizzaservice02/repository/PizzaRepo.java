@@ -1,6 +1,6 @@
 package ua.rd.pizzaservice02.repository;
 
-import ua.rd.pizzaservice.domain.Pizza;
+import ua.rd.pizzaservice02.domain.Pizza;
 
 /**
  *
