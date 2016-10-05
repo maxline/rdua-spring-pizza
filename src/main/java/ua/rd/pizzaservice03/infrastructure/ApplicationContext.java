@@ -18,11 +18,11 @@ public class ApplicationContext implements Context {
     @Override
     public <T> T getBean(String beanName) {
 
+        Class<?> type = config.getImpl(beanName);
+
         if (beans.containsKey(beanName)) {
             return (T) beans.get(beanName);
         }
-
-        Class<?> type = config.getImpl(beanName);
 
         Constructor<?> constructor =type.getConstructors()[];
         if (constructor.getParameterCount() == 0) {

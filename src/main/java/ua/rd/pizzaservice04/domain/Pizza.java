@@ -1,4 +1,4 @@
-package ua.rd.pizzaservice.domain;
+package ua.rd.pizzaservice04.domain;
 
 import java.math.BigDecimal;
 
@@ -7,6 +7,7 @@ public class Pizza {
     private String name;
     private BigDecimal price;
     private PizzaType type;
+
 
     public Pizza(Long id, String name, BigDecimal price, PizzaType type) {
         this.id = id;
