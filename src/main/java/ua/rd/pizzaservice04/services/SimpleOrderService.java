@@ -3,7 +3,7 @@ package ua.rd.pizzaservice04.services;
 import ua.rd.pizzaservice04.domain.Customer;
 import ua.rd.pizzaservice04.domain.Order;
 import ua.rd.pizzaservice04.domain.Pizza;
-import ua.rd.pizzaservice04.repository.OrderRepo;
+import ua.rd.pizzaservice04.repository.OrderRepository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,11 +13,11 @@ import java.util.List;
  */
 public class SimpleOrderService implements OrderService {
     private final PizzaService pizzaService;
-    private final OrderRepo orderRepo;
+    private final OrderRepository orderRepository;
 
-    public SimpleOrderService(PizzaService pizzaService, OrderRepo orderRepo) {
+    public SimpleOrderService(PizzaService pizzaService, OrderRepository orderRepository) {
         this.pizzaService = pizzaService;
-        this.orderRepo = orderRepo;
+        this.orderRepository = orderRepository;
     }
 
     public Order placeNewOrder(Customer customer, Integer... pizzasID) {
@@ -38,11 +38,6 @@ public class SimpleOrderService implements OrderService {
     }
 
     private void saveOrder(Order newOrder) {
-        orderRepo.save(newOrder);
+        orderRepository.save(newOrder);
     }
-
 }
-
-
-
-

@@ -8,6 +8,10 @@ public class Pizza {
     private BigDecimal price;
     private PizzaType type;
 
+    public enum PizzaType {
+        VEGETARIAN, SEA, MEAT
+    }
+
 
     public Pizza(Long id, String name, BigDecimal price, PizzaType type) {
         this.id = id;

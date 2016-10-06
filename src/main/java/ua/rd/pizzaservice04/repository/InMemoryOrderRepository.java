@@ -9,15 +9,17 @@ import java.util.List;
  * не умеет создавать order , умеет искать
  * по сути repository это dao
  */
-public class InMemoryOrderRepo implements OrderRepo {
+public class InMemoryOrderRepository implements OrderRepository {
 
     private final List<Order> orders = new ArrayList();
 
-
-    @Override
-    public void save(Order newOrder) {
-        orders.add(newOrder);
+    public List<Order> getOrders() {
+        return orders;
     }
 
-
+    @Override
+    public Order save(Order order) {
+        orders.add(order);
+        return order;
+    }
 }

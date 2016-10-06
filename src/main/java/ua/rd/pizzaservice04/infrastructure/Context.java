@@ -1,5 +1,8 @@
 package ua.rd.pizzaservice04.infrastructure;
 
+import java.lang.reflect.InvocationTargetException;
+
 public interface Context {
-    <T> T getBean(String beanName);  //объекты которыми управляет кОнтекст будем называть бинами
+    //объекты которыми управляет кОнтекст будем называть бинами
+    <T> T getBean(String beanName) throws IllegalAccessException, InvocationTargetException, InstantiationException;
 }
