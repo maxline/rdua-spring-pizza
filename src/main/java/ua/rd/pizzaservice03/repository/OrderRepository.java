@@ -2,7 +2,7 @@ package ua.rd.pizzaservice03.repository;
 
 import ua.rd.pizzaservice03.domain.Order;
 
-public interface OrderRepo {
+public interface OrderRepository {
 
-    void save(Order newOrder);
+    Order save(Order newOrder);
 }

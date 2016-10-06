@@ -5,6 +5,6 @@ import ua.rd.pizzaservice03.domain.Order;
 
 public interface OrderService {
 
-    Order placeNewOrder(Customer customer, Integer... ids);
+    Order placeNewOrder(Customer customer, int... pizzaID);
 
 }

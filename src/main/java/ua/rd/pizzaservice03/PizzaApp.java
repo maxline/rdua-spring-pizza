@@ -1,18 +1,16 @@
 package ua.rd.pizzaservice03;
 
-import ua.rd.pizzaservice03.repository.PizzaRepo;
-import ua.rd.pizzaservice03.services.PizzaService;
-import ua.rd.pizzaservice03.services.SimplePizzaService;
 import ua.rd.pizzaservice03.domain.Customer;
+import ua.rd.pizzaservice03.domain.Order;
 import ua.rd.pizzaservice03.infrastructure.ApplicationContext;
 import ua.rd.pizzaservice03.infrastructure.Context;
 import ua.rd.pizzaservice03.infrastructure.JavaConfig;
+import ua.rd.pizzaservice03.services.OrderService;
 
 public class PizzaApp {
     public static void main(String[] args) {
         Customer customer = null;
-//        Order order;
-//
+
 //        SimpleOrderService orderService = new SimpleOrderService();
 //        order = orderService.placeNewOrder(customer, 1, 2, 3);
 //
@@ -24,17 +22,12 @@ public class PizzaApp {
         //можно проверить если подряд вызвать гетБин, будет один и тот же объект
 
 
-        PizzaRepo pizzaRepo = context.getBean("pizzaRepository");
-
-        PizzaService pizzaService = new SimplePizzaService();
-        System.out.println(pizzaService.find(1));
+        //System.out.println(pizzaRepository.find(1));
 
 
-        //
-//        OrderService orderService = context.getBean("orderService");
-//
-//        Order order = orderService.placeNewOrder(customer, 1, 2, 3);
-//
+        OrderService orderService = context.getBean("orderService");
+        Order order = orderService.placeNewOrder(customer, 1, 2, 3);
+        System.out.println(order);
 
         //пытаемся создать конструктор объекта
         //вызываем рефлекшн с параметрами (передаем массив объектов с которым должен быть вызван конструктор)
